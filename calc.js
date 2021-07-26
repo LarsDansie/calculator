@@ -45,6 +45,9 @@ reader.question(`What would you like to calculate? "+ - / sqrt sqr cube": `, fun
 	if (mathSymbol === "cube"){
 		console.log(num1 * num1 * num1)
 	}
+	if (mathSymbol === "Goodbye"){
+		console.log("Farewell")
+	}
 	// This line closes the connection to the command line interface.
 	reader.close()
 
