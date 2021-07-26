@@ -7,7 +7,7 @@ const reader = readline.createInterface({
 
 
 
-reader.question(`What would you like to calculate? "+ - / sqrt": `, function(input){
+reader.question(`What would you like to calculate? "+ - / sqrt sqr cube": `, function(input){
 	tokens = input.split(' ');
 	
 	mathSymbol = tokens[0];
@@ -36,6 +36,14 @@ reader.question(`What would you like to calculate? "+ - / sqrt": `, function(inp
 
 	if (mathSymbol === "sqrt"){
 		console.log(Math.sqrt(num1));
+	}
+
+	if (mathSymbol === "sqr"){
+		console.log(num1 * num1)
+	}
+
+	if (mathSymbol === "cube"){
+		console.log(num1 * num1 * num1)
 	}
 	// This line closes the connection to the command line interface.
 	reader.close()
